@@ -9,11 +9,11 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 public class InvationGenerator {
 	private static final String XML_FILE_WAY = "./PersonFile.xml";
 	private static final String TEMPLATE_WAY = 
-			"C:\\Users\\akolotii\\eclipse-workspace\\Tutorial\\docTemplate\\template.docx";
+			"./docTemplate/template.docx";
 	private static final String[] DOC_NAME_PARTS = new String[] {"lastName","name","patronymic"};
 	private static final String DOC_TYPE = "Приглашение";
 	private static final String DOC_WAY = 
-			"C:\\Users\\akolotii\\eclipse-workspace\\Tutorial\\generatedDocuments\\";
+			"./generatedDocuments/";
 	private static final Integer DOC_COUNT_GENERATE = 10;
 	
 	public static void main(String argv[]) {

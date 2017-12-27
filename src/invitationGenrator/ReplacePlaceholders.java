@@ -26,9 +26,11 @@ public class ReplacePlaceholders {
 			doc = replacePlaceholders(doc, placeholders);
 			docAndDocName.put(docNamePart, doc);
 		} catch (InvalidFormatException e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
+//			e.printStackTrace();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
+//			e.printStackTrace();
 		}
 		return docAndDocName;
 	}
@@ -66,9 +68,11 @@ public class ReplacePlaceholders {
 			newDoc.write(out);
 			out.close();
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
+//			e.printStackTrace();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
+//			e.printStackTrace();
 		}
 		return true;
 	}
